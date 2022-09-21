@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int trailingzero(int n)
+{
+  int sum =0;
+while (n/5>0)
+{
+sum+=(n/5);
+n/=5;
+} 
+return sum;
+}
+int main ()
+{
+cout<<trailingzero(200)<<endl;
+}
